@@ -1,0 +1,89 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                   AGROSYNC - QUICK REFERENCE                       ║
+╚════════════════════════════════════════════════════════════════════╝
+
+📁 PROJECT LOCATION
+──────────────────
+c:\Users\yeshwanthRaj\Documents\guvi_actual\my-project
+
+🔑 GET API KEYS FIRST!
+──────────────────────
+Weather API: https://openweathermap.org/api (Required)
+Gemini API:  https://makersuite.google.com/app/apikey (Optional)
+
+🚀 START BACKEND (PowerShell #1)
+─────────────────────────────────
+cd c:\Users\yeshwanthRaj\Documents\guvi_actual\my-project\backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+# Edit backend\.env - add your Weather API key
+python main.py
+→ Runs at: http://localhost:8000
+
+🌐 START FRONTEND (PowerShell #2)
+──────────────────────────────────
+cd c:\Users\yeshwanthRaj\Documents\guvi_actual\my-project
+# Edit .env - add your Weather API key
+npm run dev
+→ Runs at: http://localhost:5173
+
+📱 FEATURES
+───────────
+/ ................ Landing Page
+/analysis ........ Upload & Analyze Images
+/weather ......... Live Weather Data
+/map ............. Interactive Drone Map
+/dashboard ....... Drone Statistics
+
+🛠️ TECH STACK
+──────────────
+Frontend: React.js, Tailwind CSS, Leaflet.js, Framer Motion
+Backend:  FastAPI, TensorFlow, OpenCV, Gemini AI
+
+📊 API ENDPOINTS
+────────────────
+GET  / ...................... API Info
+POST /analyze-image ......... Image Analysis
+POST /get-suggestions ....... AI Recommendations
+GET  /get-weather ........... Weather Data
+GET  /get-drone-data ........ Drone Telemetry
+
+📖 DOCUMENTATION
+────────────────
+README.md ........... Complete Documentation
+SETUP_GUIDE.md ...... Quick Setup Instructions
+ARCHITECTURE.md ..... System Architecture
+CHECKLIST.md ........ Development Checklist
+PROJECT_SUMMARY.txt . Full Project Overview
+
+🌐 DEPLOY
+─────────
+Frontend: Netlify/Vercel (netlify.toml, vercel.json included)
+Backend:  Azure App Service (see backend/AZURE_DEPLOY.md)
+
+🐛 TROUBLESHOOTING
+──────────────────
+• npm install fails → Use --legacy-peer-deps
+• Port in use → Change port in main.py
+• Weather API 401 → Wait 10-15 min after signup
+• CORS error → Check backend is on port 8000
+
+💡 TIPS
+───────
+• Backend must run before frontend
+• Edit .env files with your actual API keys
+• Test at http://localhost:8000/docs (Swagger UI)
+• Weather data auto-refreshes every 5 minutes
+• Drone data refreshes every 10 seconds
+• Click map to add operation markers
+
+✅ READY TO USE!
+────────────────
+All dependencies installed ✓
+Environment files created ✓
+All pages built ✓
+API endpoints ready ✓
+Documentation complete ✓
+
+🎉 Just add your API keys and run!
